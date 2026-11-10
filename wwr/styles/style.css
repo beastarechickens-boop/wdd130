@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Playpen+Sans:wght@100..800&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #d8c9ea;
+}
+
+nav a {
+    text-align: center;
+    color: #f8f4ff;
+    text-decoration: none;
+    padding: 35px;
+}
+
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #5f427c;
+}
+
+body {
+    background-color: #2d1d3a;
+    font-family: Forum, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
+    background-color: #2d1d3a;
+    display: grid;
+    grid-template-columns: 150px auto;
+    position: relative;
+    z-index: 2;
+}
+
+nav a:hover {
+    background-color: #2d1d3a;
+    color: #f8f4ff;
+}
+
+.book, .join {
+    background-color: #5f427c;
+    color: #f8f4ff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: #46315e;
+    color: #f8f4ff;
+}
+
+.msg {
+    background-color: #5f427c;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #2d1d3a;
+    z-index: 1;
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+footer {
+    background-color: #2d1d3a;
+    color: #f8f4ff;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-title {
+    color: #f8f4ff;
+    font-family: "Playpen Sans", cursive;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h4 {
+    color: #f8f4ff;
+}
+
+.msg h2 {
+    color: #f8f4ff;
+    font-family: "Playpen Sans", cursive;
+}
+
+.msg p {
+    color: #f8f4ff;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #f8f4ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #d8c9ea;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    width: 100%;
+    border: 10px solid #46315e;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #2d1d3a;
+}
+
+.card-img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: 0;
+}
+
+#hero-msg h4 {
+    color: white;
+}
+
+#hero-msg { 
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #2d1d3a;
+    z-index: 0;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}

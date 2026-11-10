@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/portal-page-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Joshua's WDD 130 Portfolio</title>
+</head>
+<body>
+    <header class="bar">
+        <a href="index.html">
+            <img class="logo" src="images/logo3.png" width="250" height="250" alt="Joshua's portfolio logo">
+        </a>
+        <nav class="navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="wwr/">WWR</a></li>
+                <li><a href="ice/ice.html">ICE</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mainparagraph" aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading">Welcome to My Portfolio</h1>
+            <img class="welcome-image" src="images/idk.jpg" alt="Illustration explaining HTML and web development">
+            <div>
+                <p>Welcome to my WDD 130 portfolio. This site collects the projects, challenges, and skills I have developed while learning HTML and CSS.</p>
+                <p>Explore my whitewater rafting website, review my in-class exercises, or learn a little more about me.</p>
+            </div>
+        </section>
+
+        <section id="sitemap" aria-labelledby="sitemap-heading">
+            <h2 id="sitemap-heading">Explore My Work</h2>
+            <h3>Pages on This Site</h3>
+            <table>
+                <caption>Portfolio pages</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Page</th>
+                        <th scope="col">What's on it</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                        <td>An overview of my WDD 130 work</td>
+                    </tr>
+                    <tr>
+                        <td><a href="wwr/">WWR</a></td>
+                        <td>My whitewater rafting website assignment</td>
+                    </tr>
+                    <tr>
+                        <td><a href="ice/ice.html">ICE</a></td>
+                        <td>In-class exercises and coding practice</td>
+                    </tr>
+                    <tr>
+                        <td><a href="about-me.html">About Me</a></td>
+                        <td>A short introduction and my learning goals</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="project-heading">Featured ICE Challenges</h3>
+            <ul class="project-list">
+                <li><a href="ice/hello-world.html" target="_blank" rel="noopener">Hello World</a> - My first HTML page.</li>
+                <li><a href="ice/grid-intro.html" target="_blank" rel="noopener">Grid Introduction</a> - Practice with CSS Grid.</li>
+                <li><a href="ice/box-model.html" target="_blank" rel="noopener">Box Model</a> - Practice with margin, border, and padding.</li>
+                <li><a href="ice/intro-to-css.html" target="_blank" rel="noopener">Introduction to CSS</a> - Practice with CSS selectors.</li>
+                <li><a href="ice/apostle_spotlight/apostles.html" target="_blank" rel="noopener">Apostle Spotlight</a> - A larger page using images and layout.</li>
+            </ul>
+        </section>
+
+        <section id="feedback" aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Give Feedback</h2>
+            <h4>Send a message</h4>
+            <h5>Tell me what you think</h5>
+            <h6>It only takes a minute</h6>
+            <form action="index.html" method="get">
+                <fieldset>
+                    <legend>Feedback on my portal</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bar">
+        <a href="index.html">
+            <img class="logo" src="images/logo3.png" width="250" height="250" alt="Joshua's portfolio logo">
+        </a>
+        <nav class="navigation" aria-label="Footer navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/">WWR</a></li>
+                <li><a href="ice/ice.html">ICE</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+        <p id="year">&copy; 2026 Joshua Brunner</p>
+    </footer>
+</body>
+</html>

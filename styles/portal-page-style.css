@@ -1,0 +1,268 @@
+body {
+    background-color: #CCC9DC;
+    color: #0C1821;
+    margin: 0;
+    font-family: "Libre Baskerville", Georgia, serif;
+    line-height: 1.6;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.25rem 2.5rem;
+    background-color: #0C1821;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #F4F6F8;
+    text-decoration: none;
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+    color: #F4C95D;
+    border-bottom-color: #F4C95D;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2.5rem auto;
+}
+
+#mainparagraph, #sitemap, #feedback {
+    margin-bottom: 2rem;
+    background-color: #F4F6F8;
+    border-radius: 12px;
+    border-top: 5px solid #324A5F;
+    box-shadow: 0 6px 20px rgba(12, 24, 33, 0.15);
+}
+
+#mainparagraph {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+#mainparagraph h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+    font-family: "Caveat", cursive;
+    font-size: 3.5rem;
+    color: #1B2A41;
+    line-height: 1.2;
+}
+
+#mainparagraph img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(12, 24, 33, 0.25);
+}
+
+.welcome-image {
+    border: 4px solid #324A5F;
+}
+
+#mainparagraph p {
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+}
+
+#mainparagraph p:last-child {
+    margin-bottom: 0;
+}
+
+#sitemap, #feedback {
+    padding: 2rem 2.5rem;
+}
+
+#sitemap h2, #sitemap h1, #feedback h2 {
+    font-family: "Caveat", cursive;
+    font-size: 2.8rem;
+    color: #1B2A41;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+}
+
+#sitemap h3, #feedback h4, #feedback h5, #feedback h6 {
+    color: #324A5F;
+    margin: 0 0 0.5rem;
+}
+
+.project-heading {
+    margin-top: 2rem !important;
+}
+
+.project-list {
+    padding-left: 1.5rem;
+}
+
+.project-list li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    color: #324A5F;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+th {
+    background-color: #1B2A41;
+    color: #F4F6F8;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #CCC9DC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(204, 201, 220, 0.3);
+}
+
+a {
+    color: #324A5F;
+}
+
+td a, .project-list a {
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1B2A41;
+}
+
+#feedback form {
+    margin-top: 1.25rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid #CCC9DC;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+legend {
+    font-family: "Caveat", cursive;
+    font-size: 1.6rem;
+    color: #1B2A41;
+    padding: 0 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #1B2A41;
+}
+
+input, textarea {
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.625rem;
+    border: 1px solid #324A5F;
+    border-radius: 6px;
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    align-self: flex-start;
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+    background-color: #1B2A41;
+    color: #F4F6F8;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #324A5F;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 3px solid #F4C95D;
+    outline-offset: 3px;
+}
+
+#year {
+    color: #F4F6F8;
+    font-family: "Caveat", cursive;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .bar {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #mainparagraph {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    #mainparagraph h1 {
+        font-size: 2.75rem;
+    }
+
+    #sitemap,
+    #feedback {
+        padding: 1.5rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
